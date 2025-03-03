@@ -41,6 +41,23 @@ PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
+PACKAGES="$PACKAGES luci-app-vlmcsd"
+PACKAGES="$PACKAGES luci-app-wol"
+PACKAGES="$PACKAGES etherwake"
+PACKAGES="$PACKAGES luci-i18n-wol-zh-cn"
+PACKAGES="$PACKAGES luci-app-zerotier"
+PACKAGES="$PACKAGES luci-i18n-zerotier-zh-cn"
+PACKAGES="$PACKAGES luci-app-autoreboot"
+PACKAGES="$PACKAGES luci-i18n-autoreboot-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-udpxy-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-ddns-zh-cn"
+
+PACKAGES="$PACKAGES luci-i18n-msd_lite-zh-cn"
+PACKAGES="$PACKAGES ddns-scripts_aliyun"
+PACKAGES="$PACKAGES ddns-scripts-cloudflare"
+
+
+
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
