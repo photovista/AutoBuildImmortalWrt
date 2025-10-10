@@ -85,24 +85,7 @@ jobs:
             echo "❎ 未启用 luci-app-store"
           fi
 
-      # ✅ 新增：自动插入 GRUB 超时补丁
-      - name: Patch GRUB timeout before build
-        run: |
-          echo "正在准备 GRUB 自动引导补丁..."
-          cat >> ${{ github.workspace }}/x86-64/build24.sh <<'EOF'
 
-# ==== 自动修改 GRUB 超时为 0，隐藏菜单 ====
-if [ -d target/linux/x86/image ]; then
-sed -i 's/^set timeout=.*/set timeout=0/' target/linux/x86/image/grub-efi.cfg 2>/dev/null || true
-sed -i 's/^set timeout=.*/set timeout=0/' target/linux/x86/image/grub-legacy.cfg 2>/dev/null || true
-grep -q "set timeout=" target/linux/x86/image/grub-efi.cfg || echo "set timeout=0" >> target/linux/x86/image/grub-efi.cfg
-grep -q "set timeout=" target/linux/x86/image/grub-legacy.cfg || echo "set timeout=0" >> target/linux/x86/image/grub-legacy.cfg
-grep -q "set timeout_style=hidden" target/linux/x86/image/grub-efi.cfg || echo "set timeout_style=hidden" >> target/linux/x86/image/grub-efi.cfg
-grep -q "set timeout_style=hidden" target/linux/x86/image/grub-legacy.cfg || echo "set timeout_style=hidden" >> target/linux/x86/image/grub-legacy.cfg
-fi
-# ==== END ====
-
-EOF
 
       - name: Build ImmortalWrt-x86-64-efi
         run: |
