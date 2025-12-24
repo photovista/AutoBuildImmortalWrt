@@ -72,6 +72,7 @@ PACKAGES="$PACKAGES luci-i18n-autoreboot-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-uhttpd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-acme-zh-cn"
+PACKAGES="$PACKAGES acme-acmesh-dnsapi"
 PACKAGES="$PACKAGES luci-ssl-openssl"
 
 # 文件管理器
