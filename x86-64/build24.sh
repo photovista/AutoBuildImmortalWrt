@@ -59,8 +59,23 @@ PACKAGES="$PACKAGES luci-app-openclash"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+
+# 增加部分                                     
+PACKAGES="$PACKAGES luci-i18n-zerotier-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-wol-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-banip-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-autoreboot-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-uhttpd-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-acme-zh-cn"
+PACKAGES="$PACKAGES acme-acmesh-dnsapi"
+PACKAGES="$PACKAGES luci-ssl-openssl"
+# PACKAGES="$PACKAGES luci-i18n-udpxy-zh-cn"
+
+
 # 文件管理器
-PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
+# PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
