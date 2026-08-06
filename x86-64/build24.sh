@@ -59,7 +59,7 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 # 增加部分
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
-PACKAGES="$PACKAGES luci-app-ssr-plus
+PACKAGES="$PACKAGES luci-app-ssr-plus"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-zerotier-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
